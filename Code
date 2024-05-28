@@ -104,7 +104,7 @@ local function B(o, Y)
 end
 local function X(o, Y, j)
 	T:SetCore("SendNotification", {
-		Title = "Symphony Hub Says:";
+		Title = "معلومة:";
 		Text = o or "Noob",
 		Duration = Y or 5;
 		Icon = j or nil
@@ -358,8 +358,8 @@ local function JK()
 			end
 		end
 	end)
-	o:CreateSection("Bugs/Suggestions")
-	o:CreateParagraph("Note", "Spamming many request nor sending nonsense report could get you ban from using this script.")
+	o:CreateSection("المشاكل والاقتراحات")
+	o:CreateParagraph("Note", "الرجاء عدم ارسال أكثر من طلب لتجنب الحظر.")
 	o:CreateDropdown("Subject", {
 		"Bugs";
 		"Suggestions"
@@ -3038,7 +3038,7 @@ local function AK()
 				B("Uh oh! you need Trap Perks for this!")
 			end
 		end)
-		wK:CreateToggle("Trap Aura", function(o)
+		wK:CreateToggle("فخ الي يقرب", function(o)
 			if o then
 				if u("Trap") then
 					x:SetValue("Trap Aura Value", true)
@@ -3057,7 +3057,7 @@ local function AK()
 						end)
 					end)
 				else
-					B("Uh oh! you need Trap Perks for this!")
+					B("اسف! you تحتاج تشتري الفخ !")
 				end
 			else
 				x:SetNil("Trap Aura Value")
@@ -3082,14 +3082,14 @@ local function AK()
 					B("Uh oh! you need Trap Perks for this!")
 				end
 			else
-				x:RemoveTask("Touch Place Trap")
+				x:RemoveTask("المس تحط فخ")
 			end
 		end)
 		wK:CreateToggle("Enable Place Trap Bindable Button", function(o)
 			if o then
 				if u("Trap") then
 					UK("Place Trap", {
-						OriginalName = "Place Trap",
+						OriginalName = "حط فخ",
 						Position = UDim2.new(1, -550, 0, -190);
 						Callback = function()
 							z.Function(A.TrapSystem.PlaceTrap, (h(D)).CFrame)
@@ -3102,7 +3102,7 @@ local function AK()
 				rK("Place Trap")
 			end
 		end)
-		wK:CreateButton("Make Circle Trap", function()
+		wK:CreateButton("دائرة فخ", function()
 			if u("Trap") then
 				for o = 1, 10, 1 do
 					z.Function(A.TrapSystem.PlaceTrap, CFrame.new((h(D)).Position + 3 * Vector3.new(math.cos(((2 * math.pi) / 10) * o), 0, math.sin(((2 * math.pi) / 10) * o))))
@@ -3124,7 +3124,7 @@ local function AK()
 			if o then
 				if u("Trap") then
 					UK("Make Circle Trap", {
-						OriginalName = "MCT",
+						OriginalName = "دائرة فخ",
 						Position = UDim2.new(1, -550, 0, -140);
 						Callback = function()
 							for o = 1, 10, 1 do
@@ -3139,7 +3139,7 @@ local function AK()
 				rK("Make Circle Trap")
 			end
 		end)
-		wK:CreateButton("Get Fake Gun", function()
+		wK:CreateButton("مسدس كذبي", function()
 			if u("FakeGun") then
 				z.Event(A.Remotes.Gameplay.FakeGun, true)
 			else
@@ -3153,11 +3153,11 @@ local function AK()
 				B("Uh oh! you need FakeGun Perks for this!")
 			end
 		end)
-		wK:CreateToggle("Enable Get Fake Gun Bindable Button", function(o)
+		wK:CreateToggle("اصنع زر يعطيك مسدس كذبي", function(o)
 			if o then
 				if u("FakeGun") then
 					UK("Get Fake Gun", {
-						OriginalName = "GFG",
+						OriginalName = "مسدس كذبي",
 						Position = UDim2.new(1, -500, 0, -140),
 						Callback = function()
 							z.Event(A.Remotes.Gameplay.FakeGun, true)
@@ -3209,7 +3209,7 @@ local function AK()
 				end
 			end
 		end)
-		wK:CreateToggle("Fake Gun Rain Lobby", function(o)
+		wK:CreateToggle("مطر مسدس في اللوبي", function(o)
 			N.FakeGunRainLobby = o
 			if o then
 				if u("FakeGun") then
@@ -3319,11 +3319,11 @@ local function AK()
 				B("Uh oh! you need FakeGun Perks for this!")
 			end
 		end)
-		wK:CreateToggle("Enable Drop Fake Gun Bindable Button", function(o)
+		wK:CreateToggle("اصنع زر رمي مسدس كذبي", function(o)
 			if o then
 				if u("FakeGun") then
 					UK("Drop Fake Gun", {
-						OriginalName = "Drop Gun",
+						OriginalName = "رمي مسدس",
 						Position = UDim2.new(1, -450, 0, -190);
 						Callback = function()
 							if u("FakeGun") then
@@ -3353,8 +3353,8 @@ local function AK()
 				rK("Drop Fake Gun")
 			end
 		end)
-		wK:CreateParagraph("Fake Gun Rain!", "requires a godly gun.")
-		wK:CreateButton("Break Gun", function()
+		wK:CreateParagraph("مطر مسدس!", "requires a godly gun.")
+		wK:CreateButton("تخريب المسدس", function()
 			local o = V(q.Sheriff)
 			if o and o.Name ~= g then
 				local Y = false
@@ -3406,10 +3406,10 @@ local function AK()
 				end
 			end
 		end)
-		wK:CreateToggle("Enable Break Gun Bindable Button", function(o)
+		wK:CreateToggle("اصنع زر تخريب المسدس", function(o)
 			if o then
 				UK("Break Gun", {
-					OriginalName = "Break Gun",
+					OriginalName = "خرب المسدس",
 					Position = UDim2.new(1, -600, 0, -190);
 					Callback = function()
 						local o = V(q.Sheriff)
@@ -3442,7 +3442,7 @@ local function AK()
 				rK("Break Gun")
 			end
 		end)
-		wK:CreateToggle("Auto Break Gun", function(o)
+		wK:CreateToggle("كل شوي يخرب المسدس", function(o)
 			if o then
 				x:MakeTask("Auto Break Gun", G.Stepped, function()
 					local o = V(q.Sheriff)
@@ -9638,7 +9638,7 @@ TK:OnLoad(function(Y, j, Z, t, K, U)
 				end
 			end
 		end
-		B("اشغتل الهاك! Took " .. (Z .. "s اخذ ليشتغل."))
+		B("اشغتل الهاك! " .. (Z .. "s الوقت."))
 	else
 		d:Destroy()
 		M, f = nil, nil
