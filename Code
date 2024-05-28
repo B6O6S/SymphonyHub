@@ -1,4 +1,4 @@
--- ECLIPSE HUB ON TOP!
+-- B6O6S HUB ON TOP!
 
 local o = tick()
 local j = game:GetService("CoreGui")
@@ -314,24 +314,24 @@ local TK = (loadstring(tK(w("https://raw.githubusercontent.com/ItsJiDy/shwebsock
 local function JK()
 	local o = TK:CreateTab("Settings", "rbxassetid://\049\051\054\054\057\054\052\052\048\056\052")
 	o:CreateLabel("\194\169 Symphony Hub \050\048\050\050")
-	o:CreateLabel("Discord: Elf and Tears (@elfandtears_ndk)")
-	o:CreateLabel("YouTube: Elf and Tears (@elfandtears)")
+	o:CreateLabel("Discord: Elf and Tears (B6O6S#8348)")
+	o:CreateLabel("YouTube: Elf and Tears (@B6O6S)")
 	o:CreateParagraph("Terms of Service", "Welcome to <font color=\"rgb(\048, \050\053\053, \048)\">Symphony Hub</font>, These are the terms that you already agreed by just executing the script:\n\n<font size=\"\050\048\">What we logs</font>\n[+] We logs your Executor Name, Hardware Identifier, Roblox Place Id, Roblox User Id, Roblox Username, Symphony Hub Premium, and etc. <font color=\"rgb(\050\053\053, \048, \048)\">(We do not logs any private impormation such as IP Address, Roblox Password, and etc.)</font>\n\n<font size=\"\050\048\">Script</font>\n[+] Any attempts of bypass, crack, tamper, deobfuscate, or anything that related about <font color=\"rgb(\048, \050\053\053, \048)\">Symphony Hub</font> will be punished.\n[+] Your data that had been stored in our API will change at any time without you noticing.\n[+] <font color=\"rgb(\048, \050\053\053, \048)\">Symphony Hub</font> is secured from Remote Spy nor any Spy scripts.\n\n<font size=\"\049\052\">Last updated since May \050\055, \050\048\050\052</font>")
-	o:CreateButton("Copy Discord Invite", function()
+	o:CreateButton("نسخ دعوه الديسكورد", function()
 		local o = w("https://raw.githubusercontent.com/ItsJiDy/SymphonyHub/main/dcinv.txt")
 		if o then
 			s(o)
-			B("Copied to clipboard.")
+			B("تم النسخ الى الحافظه.")
 		end
 	end)
 	o:CreateButton("Copy Official Website", function()
 		s("https://symphonyhub.odoo.com/")
 		B("Copied to clipboard.")
 	end)
-	o:CreateSection("Script")
-	o:CreateLabel("Your Executor: <font color=\"rgb(\048, \050\053\053, \048)\">" .. (identifyexecutor() .. "</font>"))
+	o:CreateSection("سكربت")
+	o:CreateLabel("انت تستخدم: <font color=\"rgb(\048, \050\053\053, \048)\">" .. (identifyexecutor() .. "</font>"))
 	o:CreateButton("Reset Configs", function()
-		if isfolder("SymphonyHub") and isfolder("SymphonyHub/Configs") then
+		if isfolder("SymphobyHub") and isfolder("SymphonyHub/Configs") then
 			local o = listfiles("SymphonyHub/Configs")
 			local Y = deletefile and (type(deletefile) == "function" and deletefile) or delfile and (type(delfile) == "function" and delfile)
 			if Y then
@@ -373,7 +373,7 @@ local function JK()
 			B("The text must not be atleast \049\048\048\048!")
 		end
 	end)
-	o:CreateButton("Send", function()
+	o:CreateButton("ارسال", function()
 		if string.len(N.FormText) > 15 then
 			if tick() - N.FormTooFast >= 30 then
 				N.FormTooFast = tick()
@@ -401,7 +401,7 @@ local function JK()
 					})
 				end)
 				if o and (Y and not j) then
-					B("Successfully sended!")
+					B("تم الإرسال!")
 				else
 					B("An error occured, Please try again!")
 				end
@@ -538,15 +538,15 @@ local function AK()
 	local R
 	N.RoleStates = {}
 	N.Elapse = {}
-	N.SheriffSilentAimAccuracy = "Dynamic"
+	N.SheriffSilentAimAccuracy = "ديناميكي"
 	N.ManualSpeed = 3
-	N.FarmSpeedMethod = "Automatic"
-	N.TpWhenDone = "Map"
+	N.FarmSpeedMethod = "اوتوماتيك"
+	N.TpWhenDone = "الماب"
 	N.SmoothFarm = Enum.EasingDirection.InOut
 	N.Sounds = Instance.new("Sound")
 	N.Sounds.Name = "SH Sound"
 	N.Sounds.Parent = workspace
-	N.CoinType = "Coin"
+	N.CoinType = "كوين"
 	N.BoxSprayId = 14787385911
 	N.NoReplicateCoin = 0
 	N.FarmSTOP = true
@@ -580,7 +580,7 @@ local function AK()
 	F.BorderColor3 = Color3.fromRGB(20, 20, 20)
 	F.AnchorPoint = Vector2.new(.5, .5)
 	local i = Instance.new("TextLabel")
-	i.Name = "Round Timer"
+	i.Name = "وقت الراوند"
 	i.Parent = d
 	i.Visible = false
 	i.Active = false
@@ -974,7 +974,7 @@ local function AK()
 	local function eK(o)
 		local Y
 		local j = math.huge
-		if o == "Mouse Cursor" then
+		if o == "المؤشر" then
 			for o, Z in pairs(O.GetPlayers(O)) do
 				if Z.Name ~= D.Name then
 					pcall(function()
@@ -987,7 +987,7 @@ local function AK()
 				end
 			end
 			return Y
-		elseif o == "Closest" then
+		elseif o == "الأقرب" then
 			for o, Z in pairs(O.GetPlayers(O)) do
 				if Z.Name ~= D.Name then
 					pcall(function()
@@ -1532,7 +1532,7 @@ local function AK()
 				end
 			end)
 		end)
-		o:CreateButton(Y .. " Murderer", function()
+		o:CreateButton(Y .. " القاتل", function()
 			local o = V(q.Murderer)
 			if o and o.Character then
 				sK(function(Y)
@@ -1542,7 +1542,7 @@ local function AK()
 				end)
 			end
 		end)
-		o:CreateButton(Y .. " Sheriff", function()
+		o:CreateButton(Y .. " الشريف", function()
 			local o = V(q.Sheriff)
 			if o and o.Character then
 				sK(function(Y)
@@ -1552,7 +1552,7 @@ local function AK()
 				end)
 			end
 		end)
-		o:CreatePlayerDropdown("Select Player", function(o)
+		o:CreatePlayerDropdown("اختر لاعبين", function(o)
 			G = o.Name
 		end)
 		o:CreateToggle("Loop " .. (Y .. " Player"), function(o)
@@ -1690,7 +1690,7 @@ local function AK()
 				qK()
 			end
 		end)
-		iK:CreateKeybind("Fly (Mobile)", Enum.KeyCode.F, function()
+		iK:CreateKeybind("طيران (جوال)", Enum.KeyCode.F, function()
 			N.Fly = not N.Fly
 			if N.Fly then
 				AK()
@@ -1699,7 +1699,7 @@ local function AK()
 			end
 		end)
 	else
-		iK:CreateToggle("Toggle Fly", function(o)
+		iK:CreateToggle("تفعيل الطيران", function(o)
 			N.Fly = o
 			if o then
 				SK()
@@ -1716,10 +1716,10 @@ local function AK()
 			end
 		end)
 	end
-	iK:CreateSlider("Fly Speed", 1, 50, 5, function(o)
+	iK:CreateSlider("سرعه الطيران", 1, 50, 5, function(o)
 		N.FlySpeed = tonumber(o) or 50
 	end)
-	iK:CreateToggle("Toggle Infinite Jump", function(o)
+	iK:CreateToggle("قفز لانهائي", function(o)
 		if o then
 			x:MakeTask("Infinite Jump", t.JumpRequest, function()
 				D.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
@@ -1728,7 +1728,7 @@ local function AK()
 			x:RemoveTask("Infinite Jump")
 		end
 	end)
-	iK:CreateToggle("Toggle Shift Run", function(o)
+	iK:CreateToggle("اضغط shift للجري", function(o)
 		if o then
 			x:SetValue("Run Toggle", false)
 			x:MakeTask("Shift Run", t.InputBegan, function(o)
@@ -1750,7 +1750,7 @@ local function AK()
 		end
 	end)
 	iK:CreateParagraph("Toggle Shift Run", "Press <font color=\"rgb(\048, \050\053\053, \048)\">LeftShift</font>/<font color=\"rgb(\048, \050\053\053, \048)\">RightShift</font> to sprint.")
-	iK:CreateToggle("Toggle Noclip", function(o)
+	iK:CreateToggle("دخول في الجدار", function(o)
 		KK(o)
 	end)
 	iK:CreateButton("Invisible", RK)
@@ -1759,10 +1759,10 @@ local function AK()
 	iK:CreateSlider("X-ray Transparency", 1, 100, 75, function(o)
 		N.XrayTransparency = tonumber(o) and tonumber(o) / 100 or 7.5
 	end)
-	iK:CreateToggle("Always Alive Chat", function(o)
+	iK:CreateToggle("اظهار شات الميت", function(o)
 		N.AlwaysAliveChat = o
 	end)
-	iK:CreateToggle("Show Round Timer", function(o)
+	iK:CreateToggle("اظهار وقت الراوند", function(o)
 		if o then
 			x:SetValue("Timer Show", true)
 			x:MakeTask("Show Round Timer", G.Heartbeat, function()
@@ -1798,7 +1798,7 @@ local function AK()
 			i.Active = false
 		end
 	end)
-	iK:CreateToggle("Instant Role Notify", function(o)
+	iK:CreateToggle("إظهار الدور", function(o)
 		if o then
 			N.RoleStates["Instant Role Notify"] = function()
 				local o
@@ -1819,8 +1819,8 @@ local function AK()
 					end
 				end
 				task.wait(.5)
-				X("Murderer is: " .. q.Murderer, 5, "https://web.roblox.com/Thumbs/Avatar.ashx?x=\049\048\048&y=\049\048\048&Format=Png&userid=" .. (V(q.Murderer)).UserId)
-				X("Sheriff is: " .. q.Sheriff, 5, "https://web.roblox.com/Thumbs/Avatar.ashx?x=\049\048\048&y=\049\048\048&Format=Png&userid=" .. (V(q.Sheriff)).UserId)
+				X("القاتل: " .. q.Murderer, 5, "https://web.roblox.com/Thumbs/Avatar.ashx?x=\049\048\048&y=\049\048\048&Format=Png&userid=" .. (V(q.Murderer)).UserId)
+				X("الشريف: " .. q.Sheriff, 5, "https://web.roblox.com/Thumbs/Avatar.ashx?x=\049\048\048&y=\049\048\048&Format=Png&userid=" .. (V(q.Sheriff)).UserId)
 				repeat
 					task.wait()
 				until D.PlayerGui.MainGUI.Game.RoleSelector.Title.Text ~= "You Are"
@@ -1867,7 +1867,7 @@ local function AK()
 								})
 							else
 								T:SetCore("ChatMakeSystemMessage", {
-									Text = "[Dead] [" .. (o.Name .. ("]: " .. Y)),
+									Text = "[ميت] [" .. (o.Name .. ("]: " .. Y)),
 									Color = Color3.fromRGB(128, 128, 128)
 								})
 							end
@@ -1893,12 +1893,12 @@ local function AK()
 			I("<font color=\"rgb(\050\053\053, \048, \048)\">" .. (q.Murderer .. ("</font> is currently using <font color=\"rgb(\050\053\053, \048, \048)\">" .. (R[q.Murderer].Effect .. "</font> Perk!"))), 5)
 		end
 	end)
-	iK:CreateToggle("Auto Notify Murderer\'s Perk", function(o)
+	iK:CreateToggle("اظهار قدره القاتل", function(o)
 		if o then
 			N.RoleStates["Auto Notify Murderer\'s Perk"] = function()
 				for o, Y in pairs(R) do
 					if Y.Role == "Murderer" then
-						I("<font color=\"rgb(\050\053\053, \048, \048)\">" .. (o .. ("</font> is currently using <font color=\"rgb(\050\053\053, \048, \048)\">" .. (Y.Effect .. "</font> Perk!"))), 5)
+						I("<font color=\"rgb(\050\053\053, \048, \048)\">" .. (o .. ("</font> يستخدم <font color=\"rgb(\050\053\053, \048, \048)\">" .. (Y.Effect .. "</font> Perk!"))), 5)
 					end
 				end
 			end
@@ -1906,8 +1906,8 @@ local function AK()
 			N.RoleStates["Auto Notify Murderer\'s Perk"] = nil
 		end
 	end)
-	bK:CreateSection("Cham")
-	bK:CreateToggle("Cham Everyone", function(o)
+	bK:CreateSection("الرؤيه")
+	bK:CreateToggle("رؤية الجميع", function(o)
 		N.ChamEveryone = o
 		if o then
 			local function o(o)
@@ -2018,7 +2018,7 @@ local function AK()
 			x:RemoveTask("Cham Connection \052")
 		end
 	end)
-	bK:CreateToggle("Cham Dropped Gun", function(o)
+	bK:CreateToggle("رؤية المسدس", function(o)
 		if o then
 			local function o(o)
 				local Y = N.ESPFolder:FindFirstChild("Dropped Gun") or Instance.new("Folder")
@@ -2037,7 +2037,7 @@ local function AK()
 				Z.Transparency = .55
 				Z.ZIndex = 10
 			end
-			x:MakeTask("Cham Dropped Gun Connection", workspace.ChildAdded, function(Y)
+			x:MakeTask("Cham Dropped Gun", workspace.ChildAdded, function(Y)
 				if Y.Name == "GunDrop" then
 					o(Y)
 				end
@@ -2074,7 +2074,7 @@ local function AK()
 			j.Adornee = nil
 		end
 	end)
-	bK:CreateToggle("Cham Coins", function(o)
+	bK:CreateToggle("اظهار الكوين", function(o)
 		if o then
 			local function o(o)
 				local Y = o:FindFirstChild("CoinVisual")
@@ -2112,8 +2112,8 @@ local function AK()
 			end
 		end
 	end)
-	bK:CreateSection("ESP")
-	bK:CreateToggle("ESP Everyone", function(o)
+	bK:CreateSection("الاسم")
+	bK:CreateToggle("اسماء اللاعبين", function(o)
 		if o then
 			for o, Y in pairs(O:GetPlayers()) do
 				if Y.Name ~= g then
@@ -2140,7 +2140,7 @@ local function AK()
 			end
 		end
 	end)
-	bK:CreateToggle("ESP Dropped Gun", function(o)
+	bK:CreateToggle("اسم المسدس", function(o)
 		if o then
 			local function o(o)
 				local Y = N.ESPFolder:FindFirstChild("Dropped Gun") or Instance.new("Folder")
@@ -2187,7 +2187,7 @@ local function AK()
 			o:Destroy()
 		end
 	end)
-	bK:CreateToggle("ESP Coins", function(o)
+	bK:CreateToggle("اسم الكوين", function(o)
 		if o then
 			local function o(o)
 				local Y = o:FindFirstChild("CoinVisual")
@@ -2232,8 +2232,8 @@ local function AK()
 			end
 		end
 	end)
-	bK:CreateSection("ESP Box")
-	bK:CreateToggle("ESP Box Everyone", function(o)
+	bK:CreateSection("صندوق")
+	bK:CreateToggle("صندوق الجميع", function(o)
 		if o then
 			for o, Y in pairs(O:GetPlayers()) do
 				if Y.Name ~= g then
@@ -2266,8 +2266,8 @@ local function AK()
 			end
 		end
 	end)
-	bK:CreateSection("Tracer")
-	bK:CreateToggle("Tracer Everyone", function(o)
+	bK:CreateSection("الخط")
+	bK:CreateToggle("خط الجميع", function(o)
 		if o then
 			for o, Y in pairs(O:GetPlayers()) do
 				if Y.Name ~= g then
@@ -2294,7 +2294,7 @@ local function AK()
 			end
 		end
 	end)
-	lK:CreateSection("Fe Emotes")
+	lK:CreateSection("الرقصات")
 	lK:CreateButton("Sit", function()
 		A.Remotes.Misc.PlayEmote:Fire("sit")
 	end)
@@ -2338,8 +2338,8 @@ local function AK()
 			end))()
 		end
 	end)
-	kK:CreateLabel("Trap Abuser:")
-	kK:CreateToggle("Loop Trap Everyone", function(o)
+	kK:CreateLabel("حبس الفخ:")
+	kK:CreateToggle("حبس الجميع بالفخ", function(o)
 		if o then
 			if u("Trap") then
 				x:SetValue("Loop Trap", true)
@@ -2363,7 +2363,7 @@ local function AK()
 			x:RemoveTask("Loop Trap")
 		end
 	end)
-	kK:CreateToggle("Loop Trap Murderer", function(o)
+	kK:CreateToggle("حبس القاتل بالفخ", function(o)
 		if o then
 			if u("Trap") then
 				x:SetValue("Loop Trap Murderer", true)
@@ -2385,7 +2385,7 @@ local function AK()
 			x:RemoveTask("Loop Trap Murderer")
 		end
 	end)
-	kK:CreateToggle("Loop Trap Sheriff", function(o)
+	kK:CreateToggle("حبس الشريف بالفخ", function(o)
 		if o then
 			if u("Trap") then
 				x:SetValue("Loop Trap Sheriff", true)
@@ -2407,7 +2407,7 @@ local function AK()
 			x:RemoveTask("Loop Trap Sheriff")
 		end
 	end)
-	kK:CreateToggle("Loop Trap Player", function(o)
+	kK:CreateToggle("حبس اللاعب", function(o)
 		if o then
 			if u("Trap") then
 				x:SetValue("Loop Trap Player", true)
@@ -2427,7 +2427,7 @@ local function AK()
 			x:RemoveTask("Loop Trap Player")
 		end
 	end)
-	kK:CreatePlayerDropdown("Select Player", function(o)
+	kK:CreatePlayerDropdown("اختر لاعب", function(o)
 		N.LoopTrapPlayer = o
 	end)
 	kK:CreatePlayerDropdown("Trap Player", function(o)
@@ -2439,7 +2439,7 @@ local function AK()
 			B("Uh oh! you need Trap Perks for this!")
 		end
 	end)
-	kK:CreateButton("Trap Everyone", function()
+	kK:CreateButton("حبس الجميع بالفخ", function()
 		if u("Trap") then
 			for o, Y in pairs(O:GetPlayers()) do
 				if Y.Name ~= g and Y.Character then
@@ -2450,7 +2450,7 @@ local function AK()
 			B("Uh oh! you need Trap Perks for this!")
 		end
 	end)
-	kK:CreateButton("Trap Murderer", function()
+	kK:CreateButton("حبس القاتل بالفخ", function()
 		if u("Trap") then
 			local o = V(q.Murderer)
 			if o and (l(o) and o.Character) then
@@ -2460,7 +2460,7 @@ local function AK()
 			B("Uh oh! you need Trap Perks for this!")
 		end
 	end)
-	kK:CreateButton("Trap Sheriff", function()
+	kK:CreateButton("حبس الشريف بالفخ", function()
 		if u("Trap") then
 			local o = V(q.Sheriff)
 			if o and (l(o) and o.Character) then
@@ -2470,8 +2470,8 @@ local function AK()
 			B("Uh oh! you need Trap Perks for this!")
 		end
 	end)
-	kK:CreateSection("Without Perks")
-	kK:CreateToggle("Fake Knife", function(o)
+	kK:CreateSection("بدون متطلبات")
+	kK:CreateToggle("سكين كذبي", function(o)
 		if o then
 			pcall(function()
 				local o = Instance.new("Tool")
@@ -2507,8 +2507,8 @@ local function AK()
 		end
 	end)
 	if y then
-		nK:CreateSection("Survival")
-		nK:CreateToggle("Auto Dodge Knives", function(o)
+		nK:CreateSection("العيش")
+		nK:CreateToggle("تجاوز سكين القاتل", function(o)
 			if o then
 				x:MakeTask("Auto Dodge Knives", workspace.ChildAdded, function(o)
 					if o.Name == "ThrowingKnife" and (o:IsA("Model") and v ~= "Murderer") then
@@ -2646,8 +2646,8 @@ local function AK()
 		end
 	end
 	if H then
-		wK:CreateSection("FPS Booster")
-		wK:CreateButton("Fps Boost", function()
+		wK:CreateSection("تحسين الفريمات")
+		wK:CreateButton("فريمات اكثر", function()
 			for o, Y in pairs(workspace:GetDescendants()) do
 				pcall(function()
 					if Y:IsA("BasePart") and (not Y.Parent:FindFirstChild("Humanoid") and not Y.Parent.Parent:FindFirstChild("Humanoid")) then
@@ -2659,7 +2659,7 @@ local function AK()
 				end)
 			end
 		end)
-		wK:CreateButton("Less Lag", function()
+		wK:CreateButton("لاق خفيف", function()
 			local o = workspace:FindFirstChildOfClass("Terrain")
 			o.WaterWaveSize = 0
 			o.WaterWaveSpeed = 0
@@ -2669,7 +2669,7 @@ local function AK()
 			C.FogEnd = 9000000000
 		end)
 		wK:CreateSection("Statistics")
-		wK:CreateToggle("Auto Delete Dead Body", function(o)
+		wK:CreateToggle("حذف الجثه", function(o)
 			N.AutoDeleteDeadBody = o
 			if o then
 				(coroutine.wrap(function()
@@ -2685,7 +2685,7 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateToggle("Disable Trap", function(o)
+		wK:CreateToggle("تعطيل الفخ", function(o)
 			N.DisableTrap = o
 			if o then
 				(coroutine.wrap(function()
@@ -2748,7 +2748,7 @@ local function AK()
 				z.Function(A.Remotes.Extras.ReplicateToy, K[o])
 			end
 		end)
-		wK:CreateButton("Get All Emotes and Toys", function()
+		wK:CreateButton("جميع الرقصات والالعاب", function()
 			local o = {}
 			for Y, j in pairs(U) do
 				if j ~= "wave" and (j ~= "cheer" and j ~= "laugh") then
@@ -2777,10 +2777,10 @@ local function AK()
 			N.ForceSpawnCFrame = o.CFrame
 			D.Character.Humanoid.Health = 0
 		end)
-		wK:CreateToggle("Auto Rotate", function(o)
+		wK:CreateToggle("لف تلقائي", function(o)
 			D.Character.Humanoid.AutoRotate = not o
 		end)
-		wK:CreateToggle("Teleport Tool", function(o)
+		wK:CreateToggle("اداة تيلي بورت", function(o)
 			if o then
 				local o = Instance.new("Tool")
 				o.Name = "Teleport Tool"
@@ -2793,7 +2793,7 @@ local function AK()
 				LK("Teleport Tool")
 			end
 		end)
-		wK:CreateToggle("Toggle Anti-AFK", function(o)
+		wK:CreateToggle("ما يطلعك من القيم", function(o)
 			if o then
 				x:MakeTask("Anti AFK", D.Idled, function()
 					S:ClickButton2(Vector2.new())
@@ -2802,7 +2802,7 @@ local function AK()
 				x:RemoveTask("Anti AFK")
 			end
 		end)
-		wK:CreateToggle("Toggle Anti Fling", function(o)
+		wK:CreateToggle("تعطيل الطيران", function(o)
 			N.AntiFling = o
 			if o then
 				x:MakeTask("Anti Fling Handler", G.Heartbeat, function()
@@ -2839,10 +2839,10 @@ local function AK()
 				x:RemoveTask("Anti Fling Handler")
 			end
 		end)
-		wK:CreateToggle("Toggle Anti Kick", function(o)
+		wK:CreateToggle("تعطيل الطرد", function(o)
 			N.AntiKick = o
 		end)
-		wK:CreateToggle("Toggle Anti Void", function(o)
+		wK:CreateToggle("عدم السقوط تحت الماب", function(o)
 			if o then
 				x:MakeTask("Anti Void", G.Heartbeat, function()
 					pcall(function()
@@ -2856,7 +2856,7 @@ local function AK()
 				x:RemoveTask("Anti Void")
 			end
 		end)
-		wK:CreateToggle("Toggle Double Jump", function(o)
+		wK:CreateToggle("قفز دبل", function(o)
 			if o then
 				x:SetValue("LastJump", false)
 				task.spawn(function()
@@ -2899,7 +2899,7 @@ local function AK()
 			Z:SetValue(75)
 			workspace.CurrentCamera.FieldOfView = 75
 		end)
-		wK:CreateToggle("Two Lives", function(o)
+		wK:CreateToggle("حياتين", function(o)
 			N.SecondLife = o
 			if o then
 				(coroutine.wrap(function()
@@ -2919,8 +2919,8 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateParagraph("Two Lives!", "makes you invincible when you shooted random Innocent or you got shooted by sheriff or or you got thrown/stabbed a knife by the murderer, This only works once every round this might have a chance to make this won\'t work.")
-		wK:CreateToggle("Float", function(o)
+		wK:CreateParagraph("حياتين!", "تمنحك حياتين مثل اذا رماك القاتل ما تموت من اول رميه")
+		wK:CreateToggle("الطفو", function(o)
 			N.Float = o
 			c.CanCollide = o
 			if o then
@@ -2935,14 +2935,14 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateButton("Fake Dead", function()
+		wK:CreateButton("موت كذبي", function()
 			if D.Character then
 				local o = h(D)
 				D.Character.Humanoid.Sit = true
 				o.CFrame = o.CFrame * CFrame.new(0, 3.5, 0)
 			end
 		end)
-		wK:CreateToggle("Toggle Spam Chat", function(Y)
+		wK:CreateToggle("سبام شات", function(Y)
 			N.Loop = Y
 			if Y then
 				(coroutine.wrap(function()
@@ -2957,13 +2957,13 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateTextbox("Text to Spam", function(o)
+		wK:CreateTextbox("الرساله", function(o)
 			N.LoopText = tostring(o)
 		end)
 		local r = wK:CreateSlider("Text to Spam Delay", 1, 100, 1, function(o)
 			N.SpamDelay = tonumber(o) and tonumber(o) / 100 or .1
 		end)
-		wK:CreateToggle("Toggle Hitbox", function(o)
+		wK:CreateToggle("تفعيل الهيت بوكس", function(o)
 			if o then
 				x:MakeTask("Hitbox", G.RenderStepped, function()
 					for o, Y in pairs(O:GetPlayers()) do
@@ -2988,7 +2988,7 @@ local function AK()
 		local T = wK:CreateSlider("Hitbox Size", 1, 25, 5, function(o)
 			N.HitboxSize = tonumber(o) or 5
 		end)
-		wK:CreateButton("God Mode", function()
+		wK:CreateButton("قود مود", function()
 			local o = workspace.CurrentCamera.CFrame
 			local Y = D.Character
 			local j = Y.Humanoid
@@ -3012,8 +3012,8 @@ local function AK()
 			t.Disabled = false
 			D.CharacterAdded:Wait()
 		end)
-		wK:CreateParagraph("God Mode!", "was like similar to Two Lives but different.")
-		wK:CreateToggle("Aim Lock Murderer", function(o)
+		wK:CreateParagraph("قود مود!", "شبيه للحياتين.")
+		wK:CreateToggle("النظر الى القاتل", function(o)
 			if o then
 				x:SetValue("Aiming", true)
 				x:MakeTask("Aim Lock Murderer", G.Heartbeat, function()
@@ -3031,7 +3031,7 @@ local function AK()
 				x:SetNil("Aiming")
 			end
 		end)
-		wK:CreateKeybind("Place Trap", Enum.KeyCode.R, function()
+		wK:CreateKeybind("وضع فخ", Enum.KeyCode.R, function()
 			if u("Trap") then
 				z.Function(A.TrapSystem.PlaceTrap, (h(D)).CFrame)
 			else
@@ -3064,10 +3064,10 @@ local function AK()
 				x:RemoveTask("Trap Aura")
 			end
 		end)
-		local J = wK:CreateSlider("Trap Distance", 1, 999, 30, function(o)
+		local J = wK:CreateSlider("مسافه الفخ", 1, 999, 30, function(o)
 			N.TrapDistance = tonumber(o) or 30
 		end)
-		wK:CreateToggle("Click Place Trap", function(o)
+		wK:CreateToggle("اضغط يحط فخ", function(o)
 			if o then
 				if u("Trap") then
 					x:MakeTask("Touch Place Trap", t.InputBegan, function(o, Y)
@@ -3085,7 +3085,7 @@ local function AK()
 				x:RemoveTask("المس تحط فخ")
 			end
 		end)
-		wK:CreateToggle("Enable Place Trap Bindable Button", function(o)
+		wK:CreateToggle("اصنع زر حط فخ", function(o)
 			if o then
 				if u("Trap") then
 					UK("Place Trap", {
@@ -3120,7 +3120,7 @@ local function AK()
 				B("Uh oh! you need FakeGun Perks for this!")
 			end
 		end)
-		wK:CreateToggle("Enable Make Circle Trap Bindable Button", function(o)
+		wK:CreateToggle("اصنع زر دائرة الفخ", function(o)
 			if o then
 				if u("Trap") then
 					UK("Make Circle Trap", {
@@ -3170,8 +3170,8 @@ local function AK()
 				rK("Get Fake Gun")
 			end
 		end)
-		wK:CreateSection("Server Sided")
-		wK:CreateToggle("Fake Gun Rain", function(o)
+		wK:CreateSection("اضافي")
+		wK:CreateToggle("مطر مسدس", function(o)
 			N.FakeGunRain = o
 			if o then
 				if u("FakeGun") then
@@ -3276,10 +3276,10 @@ local function AK()
 				end
 			end
 		end)
-		wK:CreateToggle("X\051 Drop", function(o)
+		wK:CreateToggle("3X", function(o)
 			N.X3Drop = o
 		end)
-		wK:CreateButton("Drop Fake Gun", function()
+		wK:CreateButton("رمي مسدس كذبي", function()
 			if u("FakeGun") then
 				if D.Character then
 					local o = YK()
@@ -3353,7 +3353,7 @@ local function AK()
 				rK("Drop Fake Gun")
 			end
 		end)
-		wK:CreateParagraph("مطر مسدس!", "requires a godly gun.")
+		wK:CreateParagraph("مطر مسدس!", "تحتاج مسدس لوقر.")
 		wK:CreateButton("تخريب المسدس", function()
 			local o = V(q.Sheriff)
 			if o and o.Name ~= g then
@@ -3474,15 +3474,15 @@ local function AK()
 				x:RemoveTask("Auto Break Gun")
 			end
 		end)
-		wK:CreatePlayerDropdown("Check Player Coins", function(o)
+		wK:CreatePlayerDropdown(" رؤية كوين الاعبين", function(o)
 			local Y = (z.Function(A.Remotes.Extras.GetFullInventory, o)).Coins;
-			(coroutine.wrap(I))(o.Name .. (" Got <font color=\"rgb(\050\048\048, \050\048\048, \050\048\048)\">" .. (oK(Y) .. (" (" .. (Y .. ") Coins.</font>")))))
+			(coroutine.wrap(I))(o.Name .. (" عنده <font color=\"rgb(\050\048\048, \050\048\048, \050\048\048)\">" .. (oK(Y) .. (" (" .. (Y .. ") كوين.</font>")))))
 		end)
-		wK:CreatePlayerDropdown("Check Player Gems", function(o)
+		wK:CreatePlayerDropdown("رؤية جواهر الاعبين", function(o)
 			local Y = (z.Function(A.Remotes.Extras.GetFullInventory, o)).Gems;
-			(coroutine.wrap(I))(o.Name .. (" Got <font color=\"rgb(\050\048\048, \050\048\048, \050\048\048)\">" .. (oK(Y) .. (" (" .. (Y .. ") Gems.</font>")))))
+			(coroutine.wrap(I))(o.Name .. (" عنده <font color=\"rgb(\050\048\048, \050\048\048, \050\048\048)\">" .. (oK(Y) .. (" (" .. (Y .. ") جوهر.</font>")))))
 		end)
-		wK:CreatePlayerDropdown("Check Player Perks", function(o)
+		wK:CreatePlayerDropdown("رؤية قدرات الاعبين", function(o)
 			local Y = z.Function(A.Remotes.Extras.GetFullInventory, o)
 			local j, Z = Y.Perks.Owned, ""
 			for o = 1, # j, 1 do
@@ -3498,8 +3498,8 @@ local function AK()
 			end;
 			(coroutine.wrap(I))(o.Name .. (" has " .. (Z .. " Perks.")))
 		end)
-		wK:CreateSection("Toy Modification")
-		wK:CreateToggle("Infinite Fireflies", function(o)
+		wK:CreateSection("تعديل الالعاب")
+		wK:CreateToggle("فراش لانهائي", function(o)
 			if o then
 				x:MakeTask("Infinite Fireflies", G.RenderStepped, function()
 					if D and (D.Character and D.Character:FindFirstChild("Fireflies")) then
@@ -3513,7 +3513,7 @@ local function AK()
 				end
 			end
 		end)
-		wK:CreateToggle("No Fireflies Cooldown", function(o)
+		wK:CreateToggle("استخدام الفراش بدون توقف", function(o)
 			if o then
 				x:MakeTask("No Fireflies Cooldown", G.RenderStepped, function()
 					if D and (D.Character and D.Character:FindFirstChild("Fireflies")) then
@@ -3524,7 +3524,7 @@ local function AK()
 				x:RemoveTask("No Fireflies Cooldown")
 			end
 		end)
-		wK:CreateSection("Spray Paint")
+		wK:CreateSection("البخاخ")
 		wK:CreateToggle("Spray Paint Immunity", function(o)
 			if o then
 				x:MakeTask("Spray Paint Immunity", workspace.ChildAdded, function(o)
@@ -3784,8 +3784,8 @@ local function AK()
 				end
 			end
 		end)
-		wK:CreateSection("Advanced")
-		wK:CreateToggle("Loop Sound", function(o)
+		wK:CreateSection("محسنه")
+		wK:CreateToggle("ازعاج السيرفر", function(o)
 			N.LoopSound = o
 			if o then
 				(coroutine.wrap(function()
@@ -3800,7 +3800,7 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateToggle("Swim", function(o)
+		wK:CreateToggle("سباحة", function(o)
 			N.Swim = o
 			if o then
 				local o = Enum.HumanoidStateType:GetEnumItems()
@@ -3834,7 +3834,7 @@ local function AK()
 				end)
 			end
 		end)
-		wK:CreateToggle("Bang Player", function(o)
+		wK:CreateToggle("لمس خلفي", function(o)
 			N.Bang = o
 			if o then
 				N.BangAnim = Instance.new("Animation")
@@ -3862,10 +3862,10 @@ local function AK()
 				end)
 			end
 		end)
-		wK:CreatePlayerDropdown("Select Player", function(o)
+		wK:CreatePlayerDropdown("اختر لاعب", function(o)
 			N.BangPlayer = o
 		end)
-		wK:CreateToggle("Force Trade", function(o)
+		wK:CreateToggle("تريد إجباري", function(o)
 			N.ForceTrade = o
 			if o then
 				(coroutine.wrap(function()
@@ -3879,7 +3879,7 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateToggle("Fake Lag", function(o)
+		wK:CreateToggle("لاق كذبي", function(o)
 			N.FakeLag = o
 			if o then
 				(coroutine.wrap(function()
@@ -3897,7 +3897,7 @@ local function AK()
 				end))()
 			end
 		end)
-		wK:CreateSection("Admin Commands")
+		wK:CreateSection("ادمن")
 		wK:CreateLabel("Spray Paint:")
 		wK:CreateLabel("[+] //reset [player]")
 		wK:CreateLabel("[+] //box [player]")
@@ -4009,10 +4009,10 @@ local function AK()
 			B("The gun didn\'t dropped yet")
 		end
 	end)
-	PK:CreateToggle("Enable Grab Gun Bindable Button", function(o)
+	PK:CreateToggle("اصنع زر اخذ مسدس", function(o)
 		if o then
 			UK("Grab Gun", {
-				OriginalName = "Grab Gun",
+				OriginalName = "اخذ المسدس",
 				Position = UDim2.new(1, -500, 0, -190);
 				Callback = function()
 					local o = workspace:FindFirstChild("GunDrop")
@@ -4040,9 +4040,9 @@ local function AK()
 							end)
 						end
 					elseif o and not l(D) then
-						B("You can\'t get the gun because you\'re not in the game")
+						B("لايمكنك اخذ المسدس لانك ميت")
 					elseif not o ~= nil then
-						B("The gun didn\'t dropped yet")
+						B("المسدس مع احد اللاعبين")
 					end
 				end
 			})
@@ -4050,7 +4050,7 @@ local function AK()
 			rK("Grab Gun")
 		end
 	end)
-	PK:CreateToggle("Auto Grab Gun", function(o)
+	PK:CreateToggle("اخذ المسدس تلقائي", function(o)
 		N.AutoGrabGun = o
 		if o then
 			task.spawn(function()
@@ -4091,15 +4091,15 @@ local function AK()
 		end
 	end)
 	PK:CreateParagraph("Auto Grab Gun!", "will not trigger, if the murderer was camping the gun")
-	PK:CreateSection("Blurt/Expose")
-	PK:CreateButton("Blurt Roles", function()
+	PK:CreateSection("اخبار")
+	PK:CreateButton("فضح الدور", function()
 		for Y, j in pairs(R) do
 			if j.Role == "Murderer" or j.Role == "Sheriff" or j.Role == "Hero" then
 				z.Event(o, j.Role .. (" is: " .. Y), N.AlwaysAliveChat and "alive" or "normalchat")
 			end
 		end
 	end)
-	PK:CreateToggle("Auto Blurt Roles", function(Y)
+	PK:CreateToggle("فضح الدور تلقائي", function(Y)
 		if Y then
 			N.RoleStates["Auto Blurt Roles"] = function()
 				for Y, j in pairs(R) do
@@ -4112,12 +4112,12 @@ local function AK()
 			N.RoleStates["Auto Blurt Roles"] = nil
 		end
 	end)
-	PK:CreateButton("Blurt Murderer\'s Perk", function()
+	PK:CreateButton("فضح قدره القاتل", function()
 		if q.Murderer ~= "" then
 			z.Event(o, q.Murderer .. (" is currently using " .. (R[q.Murderer].Effect .. " Perk")), N.AlwaysAliveChat and "alive" or "normalchat")
 		end
 	end)
-	PK:CreateToggle("Auto Blurt Murderer\'s Perk", function(Y)
+	PK:CreateToggle("فضح قدره القاتل تلقائي", function(Y)
 		if Y then
 			N.RoleStates["Auto Blurt Murderer\'s Perk"] = function()
 				for Y, j in pairs(R) do
@@ -4130,20 +4130,20 @@ local function AK()
 			N.RoleStates["Auto Blurt Murderer\'s Perk"] = nil
 		end
 	end)
-	PK:CreateSection("Spectate")
-	PK:CreateButton("Spectate Murderer", function()
+	PK:CreateSection("متابعه")
+	PK:CreateButton("متابعه القاتل", function()
 		local o = V(q.Murderer)
 		if l(o) then
 			EK(o.Character)
 		end
 	end)
-	PK:CreateButton("Spectate Sheriff", function()
+	PK:CreateButton("متابعه الشريف", function()
 		local o = V(q.Sheriff)
 		if l(o) then
 			EK(o.Character)
 		end
 	end)
-	PK:CreateButton("Spectate Gun Drop", function()
+	PK:CreateButton("متابعه المسدس", function()
 		local o = workspace:FindFirstChild("GunDrop")
 		if o ~= nil then
 			EK(o)
@@ -4151,13 +4151,13 @@ local function AK()
 			B("The gun didn\'t dropped yet")
 		end
 	end)
-	PK:CreatePlayerDropdown("Spectate Player", function(o)
+	PK:CreatePlayerDropdown("متابعه الاعبين", function(o)
 		EK(o.Character)
 	end)
-	PK:CreateButton("Unspectate", function()
+	PK:CreateButton("توقف عن المتابعه", function()
 		EK(D.Character)
 	end)
-	PK:CreateToggle("Toggle Circle Cursor", function(o)
+	PK:CreateToggle("دائرة شرح", function(o)
 		M.Visible = o
 		if o then
 			x:MakeTask("Circle Cursor", G.Stepped, function()
@@ -4167,16 +4167,16 @@ local function AK()
 			x:RemoveTask("Circle Cursor")
 		end
 	end)
-	PK:CreateButton("Remove Barriers", function()
+	PK:CreateButton("حذف الجدران المخفيه", function()
 		for o, Y in pairs(workspace:GetDescendants()) do
 			if Y.Name == "GlitchProof" then
 				Y:Destroy()
 			end
 		end
 	end)
-	PK:CreateToggle("Remove Knife Effects &\n<font color=\"rgb(\050\053\053, \048, \048)\">C</font><font color=\"rgb(\048, \050\053\053, \048)\">h</font><font color=\"rgb(\048, \048, \050\053\053)\">r</font><font color=\"rgb(\050\053\053, \048, \048)\">o</font><font color=\"rgb(\048, \050\053\053, \048)\">m</font><font color=\"rgb(\048, \048, \050\053\053)\">a</font> Glowing Animation", function(o)
+	PK:CreateToggle("حذف الافكت &\n<font color=\"rgb(\050\053\053, \048, \048)\">C</font><font color=\"rgb(\048, \050\053\053, \048)\">h</font><font color=\"rgb(\048, \048, \050\053\053)\">r</font><font color=\"rgb(\050\053\053, \048, \048)\">o</font><font color=\"rgb(\048, \050\053\053, \048)\">m</font><font color=\"rgb(\048, \048, \050\053\053)\">a</font> تلوين الاسلحه", function(o)
 		if o then
-			x:MakeTask("Remove Knife Effects & Chroma Glowing Animation", G.RenderStepped, function()
+			x:MakeTask("توقف الوان الاسلحه / حذف الافيكت ", G.RenderStepped, function()
 				for o, Y in pairs(O:GetPlayers()) do
 					pcall(function()
 						for o, Y in pairs(Y.Character.KnifeDisplay:GetDescendants()) do
@@ -4204,7 +4204,7 @@ local function AK()
 			x:RemoveTask("Remove Knife Effects & Chroma Glowing Animation")
 		end
 	end)
-	PK:CreateToggle("Optimize Coins", function(o)
+	PK:CreateToggle("تحسين الكوين", function(o)
 		if o then
 			x:MakeTask("Optimize Coins", G.Stepped, function()
 				local o = ZK()
@@ -4224,7 +4224,7 @@ local function AK()
 			x:RemoveTask("Optimize Coins")
 		end
 	end)
-	PK:CreateToggle("Loop Interactive", function(o)
+	PK:CreateToggle("اضغط جميع الازرار", function(o)
 		N.LoopInteractive = o
 		if o then
 			(coroutine.wrap(function()
@@ -4242,12 +4242,12 @@ local function AK()
 			end))()
 		end
 	end)
-	PK:CreateButton("Get XBox Knife", function()
+	PK:CreateButton("الحصول على سكينه الاكسبوكس", function()
 		if A.Remotes.Extras and A.Remotes.Extras.IsXbox then
 			z.Event(A.Remotes.Extras.IsXbox)
 		end
 	end)
-	PK:CreateToggle("Auto Prestige", function(o)
+	PK:CreateToggle("الفل التالي", function(o)
 		if o then
 			x:MakeTask("Auto Prestige", G.RenderStepped, function()
 				z.Event(A.Remotes.Inventory.Prestige)
@@ -4256,7 +4256,7 @@ local function AK()
 			x:RemoveTask("Auto Prestige")
 		end
 	end)
-	PK:CreateButton("Prestige", function()
+	PK:CreateButton("الفل التالي", function()
 		z.Event(A.Remotes.Inventory.Prestige)
 	end)
 	G.RenderStepped:Connect(function()
@@ -4477,8 +4477,8 @@ local function AK()
 			end
 		end)
 	end)
-	VK:CreateSection("Survival")
-	VK:CreateToggle("Auto Dodge Murderer <font color=\"#\057f\052fff\">(Premium)</font>", function(o)
+	VK:CreateSection("المساعده")
+	VK:CreateToggle("تجاوز السكين <font color=\"#\057f\052fff\">(Premium)</font>", function(o)
 		if H then
 			if o then
 				x:MakeTask("Auto Dodge Murderer", G.Heartbeat, function()
