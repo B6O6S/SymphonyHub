@@ -663,7 +663,7 @@ local function AK()
 		elseif o == "Innocent" then
 			return Color3.fromRGB(0, 200, 0)
 		elseif o == "Hero" then
-			return Color3.fromRGB(0, 255, 0)
+			return Color3.fromRGBY(255, 255, 0)
 		elseif o == "Coin" then
 			return Color3.fromRGB(0, 255, 0)
 		else
@@ -9638,7 +9638,7 @@ TK:OnLoad(function(Y, j, Z, t, K, U)
 				end
 			end
 		end
-		B("Symphony Hub Loaded! Took " .. (Z .. "s to load."))
+		B("اشغتل الهاك! Took " .. (Z .. "s اخذ ليشتغل."))
 	else
 		d:Destroy()
 		M, f = nil, nil
